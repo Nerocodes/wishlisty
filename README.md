@@ -16,3 +16,4 @@ Wishlisty is a simple e-commerce wishlist api powering scalable wishlists for yo
 - php artisan key:generate
 - php artisan migrate
 - php artisan db:seed --class=ProductSeeder
+- php artisan test

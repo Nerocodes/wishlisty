@@ -41,7 +41,7 @@ class WishlistController extends Controller
         $wishlistItem = $this->wishlistRepository->addItemToWishlist($userId, $data);
 
         return response()->json([
-            'message' => 'Item added to wishlist successfully',
+            'message' => 'Product added to wishlist successfully',
             'item' => $wishlistItem,
         ], 201);
     }
@@ -56,7 +56,7 @@ class WishlistController extends Controller
         $this->wishlistRepository->removeItemFromWishlist($userId, $productId);
 
         return response()->json([
-            'message' => 'Item removed from wishlist successfully',
+            'message' => 'Product removed from wishlist successfully',
         ], 200);
     }
 }
